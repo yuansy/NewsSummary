@@ -131,5 +131,5 @@ if __name__ == "__main__":
     pipeline.print_output(result)
 
     # Save the graph visualization to file
-    path = "scripts/graph.png"
+    path = "graph.png"
     pipeline.save_graph(path)
