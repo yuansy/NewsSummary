@@ -52,7 +52,7 @@ This tool is designed for financial analysts and decision-makers who want to ext
 
 [Launch Web App](https://newssummaryquickproject.streamlit.app/)
 
-Just enter a financial term like **"New COVID variant"** to begin.
+Just enter a financial term like **"Tesla Q2 2025 earnings"** to begin.
 
 ---
 
