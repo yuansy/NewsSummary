@@ -1,9 +1,4 @@
 import os
-import config  # your config.py with API keys
-
-# Set environment variables for API keys
-os.environ["GOOGLE_API_KEY"] = config.GOOGLE_API_KEY
-os.environ["TAVILY_API_KEY"] = config.TAVILY_API_KEY
 
 from langchain.chat_models import init_chat_model
 from langgraph.graph import StateGraph, END
@@ -138,6 +133,11 @@ class NewsPipeline:
             f.write(png_bytes)
 
 if __name__ == "__main__":
+    # Set environment variables for API keys
+    import config  # your config.py with API keys
+    os.environ["GOOGLE_API_KEY"] = config.GOOGLE_API_KEY
+    os.environ["TAVILY_API_KEY"] = config.TAVILY_API_KEY
+
     # Search query input
     query = "Tesla earnings Q2 2025"
 

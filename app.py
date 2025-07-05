@@ -1,8 +1,12 @@
 # streamlit run app.py
 
+import os
 import streamlit as st
 from pipeline import NewsPipeline
 from langchain.chat_models import init_chat_model
+
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+os.environ["TAVILY_API_KEY"] = st.secrets["TAVILY_API_KEY"]
 
 st.set_page_config(page_title="News Insight", layout="wide")
 
