@@ -1,0 +1,5 @@
+streamlit
+langchain
+langgraph
+langchain-tavily
+langchain-google-genai
